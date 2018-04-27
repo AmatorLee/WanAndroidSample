@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WanAndroidSample</string>
+    <string name="txt_author">作者</string>
+    <string name="txt_tag">分类</string>
+</resources>

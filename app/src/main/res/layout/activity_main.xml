@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        ></android.support.v4.view.ViewPager>
+
+    <com.chaychan.library.BottomBarLayout
+        android:id="@+id/bbl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        >
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:iconNormal="@mipmap/icon_home_nromal"
+            app:iconSelected="@mipmap/icon_home_selected"
+            app:itemText="首页"
+            app:textColorNormal="@color/tab_normal_color"
+            app:textColorSelected="@color/tab_selected_color"
+            app:itemTextSize="11sp"
+            app:itemMarginTop="4dp"
+            />
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:iconNormal="@mipmap/icon_tixi_normal"
+            app:iconSelected="@mipmap/icon_tixi_selected"
+            app:itemText="体系"
+            app:textColorNormal="@color/tab_normal_color"
+            app:textColorSelected="@color/tab_selected_color"
+            app:itemTextSize="11sp"
+            app:itemMarginTop="4dp"
+            />
+
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:iconNormal="@mipmap/icon_navi_normal"
+            app:iconSelected="@mipmap/icon_navi_selected"
+            app:itemText="导航"
+            app:textColorNormal="@color/tab_normal_color"
+            app:textColorSelected="@color/tab_selected_color"
+            app:itemTextSize="11sp"
+            app:itemMarginTop="4dp"
+            />
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:iconNormal="@mipmap/icon_mine_normal"
+            app:iconSelected="@mipmap/icon_mine_selected"
+            app:itemText="我的"
+            app:textColorNormal="@color/tab_normal_color"
+            app:textColorSelected="@color/tab_selected_color"
+            app:itemTextSize="11sp"
+            app:itemMarginTop="4dp"
+            />
+
+    </com.chaychan.library.BottomBarLayout>
+
+</LinearLayout>
